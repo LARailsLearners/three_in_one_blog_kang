@@ -1,2 +1,8 @@
 <h1>index page</h1>
 <p><%= link_to "new", new_post_path %></p>
+
+<% @posts.each do |post| %>
+  <h2><%= link_to post.title, post %></h2>
+  <p><%= truncate(post.body) %></p>
+  <p><%= post.created_at.strftime("%B, %d, %Y") %></p>
+<% end %>
