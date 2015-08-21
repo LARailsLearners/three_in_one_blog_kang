@@ -1,2 +1,7 @@
 <h1>new page</h1>
 <p><%= link_to "index", posts_path %></p>
+
+<%= form_for posts_path do |f| %>
+  <%= f.text_field :title %>
+  <%= f.submit %>
+<% end %>
