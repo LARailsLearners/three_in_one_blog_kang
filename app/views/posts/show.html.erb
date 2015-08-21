@@ -1,6 +1,4 @@
-<h1>show page</h1>
-<p><%= link_to "index", posts_path %></p>
-
+<div id="post_content">
   <h1 class="title">
     <%= @post.title %>
   </h1>
@@ -12,3 +10,4 @@
   <p class="body">
     <%= simple_format(@post.body) %>
   </p>
+</div>
